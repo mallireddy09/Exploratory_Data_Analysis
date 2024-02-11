@@ -1,13 +1,61 @@
+# Database connections
+
+Our first step will be to create a connection to our SQL database. A few common SQL databases used with Python include:
+
+Microsoft SQL Server
+Postgres
+MySQL
+AWS Redshift
+AWS Aurora
+Oracle DB
+Teradata
+Db2 Family
+Many, many others
+
+Each of these databases will require a slightly different setup and may require credentials (username & password), tokens, or other access requirements. We'll be using sqlite3 to connect to our database, but other connection packages include:
+
+SQLAlchemy (most common)
+psycopg2
+MySQLdb
+
+
 # Reading in Database Files
 
-The steps to read in a database file using the sqlite library are:
+The steps to read a database file using the SQLite library are:
 
 1. create a path variable that references the path to your database.
 2. create a connection variable that references the connection to your database.
 3. create a query variable that contains the SQL query that reads in the data table from your database.
-4.create an observations variable to assign the read_sql functions from pandas package.
-5.create a tables variable to read in the data from the table sqlite_master.
+4. create an observations variable to assign the read_sql functions from the pandas package.
+5. create a table variable to read in the data from the table sqlite_master.
 
 -> JSON files are a standard way to store data across platforms. Their structure is similar to Python dictionaries.
 
 -> NoSQL databases are not relational and vary more in structure. Most NoSQL databases store data in JSON format.
+
+
+# Data Cleaning
+
+Data Cleaning is important because messy data will lead to unreliable outcomes. Some common issues that make data messy are duplicate or unnecessary data, inconsistent data and typos, missing data, outliers, and data source issues.
+
+You can identify duplicate or unnecessary data common policies to deal with missing data are: 
+-> Remove a row with missing columns, 
+-> Impute the missing data, and 
+-> Mask the data by creating a category for missing values.
+
+# Common methods to find outliers are: through plots, statistics, or residuals.
+
+# Common policies to deal with outliers are: 
+-> Remove outliers, 
+-> Impute them, 
+-> Use a variable transformation, or 
+-> Use a model that is resistant to outliers.
+
+we will be using the following libraries:
+
+⁠⁠ -> Pandas ⁠ for managing the data.
+⁠ -> NumPy ⁠ for mathematical operations.
+⁠ -> Seaborn ⁠ for visualizing the data.
+⁠ -> Matplotlib ⁠ for visualizing the data.
+⁠ -> Sklearn ⁠ for machine learning and machine-learning-pipeline-related functions.
+⁠ -> Scipy ⁠ for statistical computations.
