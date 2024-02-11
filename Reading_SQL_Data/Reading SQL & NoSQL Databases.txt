@@ -1,0 +1,13 @@
+# Reading in Database Files
+
+The steps to read in a database file using the sqlite library are:
+
+1. create a path variable that references the path to your database.
+2. create a connection variable that references the connection to your database.
+3. create a query variable that contains the SQL query that reads in the data table from your database.
+4.create an observations variable to assign the read_sql functions from pandas package.
+5.create a tables variable to read in the data from the table sqlite_master.
+
+-> JSON files are a standard way to store data across platforms. Their structure is similar to Python dictionaries.
+
+-> NoSQL databases are not relational and vary more in structure. Most NoSQL databases store data in JSON format.
